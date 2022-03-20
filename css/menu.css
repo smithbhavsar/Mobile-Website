@@ -1,0 +1,60 @@
+*	{
+	margin: 0px;
+}
+ .menu1{
+ 	float: left;
+ 	color: white;
+ 	font-family: monospace;
+ }
+.menu{
+		text-align: right;
+   		height: 35px;
+   		padding: 19px;
+    	padding-right: 110px;
+}
+.menu li {
+		display: inline-block;
+		padding: 10px 10px;
+		font-family: "Montserrat", sans-serif;
+	
+}
+ .menu li a	{
+ 		color: white;
+ 		text-decoration: none;
+ 		font-family: sans-serif;
+ 		font-size: 18px;
+ }
+ .menu li:hover	{
+ 		text-shadow: rgb(f2f2f2);
+ 		text-decoration: underline; 
+ }
+body	{
+			background: #43cea2;
+			background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		}
+.submenu{
+	position: absolute;
+	left: 822px;
+	top:38px;
+	padding: 0px;
+	display: none;
+	background-color: yellow;
+}
+.submenu li	{
+	display: block;
+	padding: 8px;
+}
+ .menu li:hover .submenu{
+ 	display: block;
+ 	width: 49px;
+ }
+ .submenu li:hover{
+ 	background-color: red;
+ }
+ .head{
+ 	width: auto;
+ 	text-align: center;
+	margin-top: 125px;
+
+ }

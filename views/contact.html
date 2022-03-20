@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>smith</title>
+	<link rel="stylesheet" type="text/css" href="../css/menu.css">
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+	<style type="text/css">
+		.ht{
+			color: white;
+			font-size: 40px;
+			font-family: "Raleway", sans-serif;
+		}
+		.form
+		{
+			margin-left: 115px;
+			float: left;
+			width: auto;
+		}
+		.map{
+			margin: 25px;
+			float: left;
+			width: auto;
+		}
+		.form-control{
+			border-style: none none solid;
+		border-width: 0 0 2px;
+		box-shadow: none;
+		color: #222;
+		font-family: "Open Sans", sans-serif;
+		font-size: 18px;
+		height: 35px;
+    	width: 270px;
+    	margin: auto;
+    	margin-top: 15px;
+    	background: transparent;
+    	margin-bottom: 15px;
+		}
+		input::placeholder{
+			color: white;
+		}
+		#contact-message{
+			width: 540px;
+		}
+		#contact-submit{
+	background: #212121 none repeat scroll 0 0;
+	border: 2px solid #212111;
+	color: #fff;
+	text-transform: uppercase;
+	display: inline-block;
+	font-family: "Raleway", sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	margin-top: 30px;
+	padding: 10px 20px;
+	cursor: pointer
+		}
+	</style>
+</head>
+<body>
+	<ul class="menu">
+  <li class="menu1"><a href="../index.html"><h4>DEALOCUS</h4></a></li>
+	<li><a href="../index.html" >Home</a></li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="Contact.html">Contact</a></li>
+	<li><a href="login.html">Login</a></li>
+	<li><a href="gallery.html">Gallery</a></li>
+</ul>
+<br>
+<br>
+<br>
+<div class="map">
+	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDM6qjjFP-yu41gwL4lPhNZNbws2FBadOU'></script><div style='overflow:hidden;height:414px;width:500px;'><div id='gmap_canvas' style='height:414px;width:500px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://add-map.org/'>www.add-map.org</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=9b55c8753336211c99a45aba44c93d836dd88100'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(23.0127081,72.51625450000006),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(23.0127081,72.51625450000006)});infowindow = new google.maps.InfoWindow({content:'<strong>A/502 Indraprasth-3</strong><br>100Ft. Anandanagar road, Satellite<br>380015 Ahmedabad<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+</div>
+<div class="form">
+	<center><h1 class="ht animated wobble">Get In Touch</h1>
+	<br>
+  <form>
+       <input type="text" id="contact-name" class="form-control" placeholder="Name" minlength=3 >
+		<input type="email" id="contact-email"  class="form-control" placeholder="Email" >
+		<br>
+		<input id="contact-message"  class="form-control" placeholder="How can we help you?" rows=6 cols="25"></input><br>
+  		<button id="contact-submit">Send Message </button>
+  	</form>
+  </center>
+</div>
+</body>
+</html>
